@@ -7,3 +7,4 @@ ostream& operator<<(ostream& o, ListaTelefono& data) {
 	return o;
 
 }
+

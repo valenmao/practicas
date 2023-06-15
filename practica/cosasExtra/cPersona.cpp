@@ -54,6 +54,6 @@ ostream& operator<<(ostream& out, string nombre)
 }
 ostream& operator<<(ostream& out, cPersona& imprimo)
 {
-	out << imprimo.get_dni() << "";
+	out << imprimo.dni << "";
 	return out;
 }

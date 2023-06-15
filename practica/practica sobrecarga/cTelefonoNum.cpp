@@ -7,6 +7,10 @@ cTelefonoNum::cTelefonoNum(string due,int carac, int prim, int ult)
 	this->primeros4 = prim;
 	this->ultimos4 = ult;
 }
+cTelefonoNum::cTelefonoNum()
+{
+}
+
 cTelefonoNum::~cTelefonoNum()
 {
 
@@ -64,10 +68,13 @@ bool cTelefonoNum:: operator!=(cTelefonoNum derecha)
 {
 	return false;
 }
-cTelefonoNum& cTelefonoNum::operator=(const cTelefonoNum otro)
+cTelefonoNum& cTelefonoNum::operator=( cTelefonoNum *otro)
 {
-	cTelefonoNum aux("3",11,4554,5323);
-	return aux;
+	duenio = otro->duenio;
+	caracteristica = otro->caracteristica;
+	ultimos4 = otro->ultimos4;
+	primeros4 = otro->primeros4;
+	return *this;
 
 }
 int cTelefonoNum ::GET_CARACT()
@@ -90,6 +97,11 @@ void cTelefonoNum::set_carac(int caract)
 {
 	this->caracteristica = caract;
 	return;
+}
+
+string cTelefonoNum::get_duenio()
+{
+	return this->duenio;
 }
 
 ostream& operator<<(ostream& out, cTelefonoNum& objetos)

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8dd5dcbd-250b-4920-9f2e-a88099a07be6}</ProjectGuid>
-    <RootNamespace>practicasobrecarga</RootNamespace>
+    <ProjectGuid>{251c60a0-4d36-4163-9a8c-6c529bf119e0}</ProjectGuid>
+    <RootNamespace>list</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,17 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cEmpresaTel.cpp" />
-    <ClCompile Include="cList.cpp" />
-    <ClCompile Include="ListaTelefonos.cpp" />
-    <ClCompile Include="main3.cpp" />
-    <ClCompile Include="cTelefonoNum.cpp" />
+    <ClCompile Include="cPersona.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cEmpresaTel.h" />
-    <ClInclude Include="cList.h" />
-    <ClInclude Include="cTelefonoNum.h" />
-    <ClInclude Include="ListaTelefonos.h" />
+    <ClInclude Include="cPersona.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

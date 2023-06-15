@@ -7,36 +7,13 @@ template <class T>
 class cList: public list<T> {
 public:
 	//sobrecargas
-	void operator-(T&);
-	void operator-(int);
+
 	void operator+(T&);
 	T operator[](int);
 	T operator[](T&);
 };
 
-template <class T>
-inline void cList<T>::operator-(T &element)
-{
-	for (T t : this)
-	{
-		if (t == element)
-			this->remove(t);
-	}
-}
 
-template <class T>
-inline void cList<T>:: operator-(int pos)
-{
-	int cont = 0;
-	for (T t : this)
-	{
-		if (cont == pos)
-		{
-			this->remove(t);
-		}
-		cont++;
-	}
-}
 
 template <class T>
 inline void cList<T> ::operator+(T &element)
