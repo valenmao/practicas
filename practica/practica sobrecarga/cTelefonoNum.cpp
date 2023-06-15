@@ -66,7 +66,9 @@ bool cTelefonoNum::operator==(cTelefonoNum derecha)
 }
 bool cTelefonoNum:: operator!=(cTelefonoNum derecha)
 {
-	return false;
+	if (this->caracteristica == derecha.caracteristica && this->primeros4 == derecha.primeros4 && this->ultimos4 == derecha.ultimos4)
+		return false;
+	return true;
 }
 cTelefonoNum& cTelefonoNum::operator=( cTelefonoNum *otro)
 {
@@ -91,7 +93,9 @@ int cTelefonoNum::GET_ULT()
 }
 string 	cTelefonoNum::to_string()
 {
-	return (caracteristica+"-" + primeros4 + ultimos4);
+	stringstream out;
+	out << "mi numero es: " << caracteristica << "-" << primeros4 << "-" << ultimos4;
+	return out.str();
 }
 void cTelefonoNum::set_carac(int caract)
 {

@@ -3,6 +3,7 @@
 #include <cmath>
 #include <string>
 #include "cList.h"
+#include <sstream>
 
 using namespace std;
 
