@@ -47,23 +47,24 @@ int main()
 	cTelefonoNum tel5("Emi", 12, 12, 23);
 
 
-	list<cTelefonoNum> listaTel;
-	listaTel.push_back(tel1);
-	listaTel.push_back(tel2);
-	listaTel.push_back(tel3);
-	listaTel.push_back(tel4);
-	listaTel.push_back(tel5);
-	cEmpresaTel miEmpresa;
-	miEmpresa.set_lista(&listaTel);
-	string imprimir = miEmpresa[3].get_duenio();
-	cout << imprimir << endl;
+	//list<cTelefonoNum> listaTel;
+	//listaTel.push_back(tel1);
+	//listaTel.push_back(tel2);
+	//listaTel.push_back(tel3);
+	//listaTel.push_back(tel4);
+	//listaTel.push_back(tel5);
+	//cEmpresaTel miEmpresa;
+	//miEmpresa.set_lista(&listaTel);
+	//string imprimir = miEmpresa[3].get_duenio();
+	//cout << imprimir << endl;
 
-	//ListaTelefono listaTel;
-	//listaTel + tel1;
-	//listaTel + tel2;
-	//listaTel + tel3;
-	// 
-	//cout << listaTel;
+	ListaTelefono listaTel;
+	listaTel + tel1;
+	listaTel + tel2;
+	listaTel + tel3;
+	listaTel - tel1;
+
+	cout << listaTel;
 
 	return 0;
 

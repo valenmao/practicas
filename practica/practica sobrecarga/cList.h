@@ -4,7 +4,7 @@
 using namespace std;
 
 template <class T>
-class cList: public list<T> {
+class cList: public list<T*> {
 public:
 	//sobrecargas
 
@@ -18,7 +18,7 @@ public:
 template <class T>
 inline void cList<T> ::operator+(T &element)
 {
-	this->push_back(element);
+	this->push_back(&element);
 }
 
 template <class T>
