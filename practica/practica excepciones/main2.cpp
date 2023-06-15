@@ -1,5 +1,5 @@
 #include "funciones.h"
-
+#include "cException.h"
 int main()
 {
 	 int* ptr = new int;
@@ -21,9 +21,9 @@ int main()
 		cambioValor(ptr, valor);
 		cout << *ptr << endl;
 	}
-	catch (exception* e)	// ¿como salvo esta excepcion?
+	catch (exception &e)	// ¿como salvo esta excepcion?
 	{
-		cout << e->what() << endl;
+		cout << e.what() << endl;
 		int num = 6;
 		ptr = &num;
 		//cambioValor(ptr, valor);
@@ -37,7 +37,7 @@ void cambioValor(int* valor, int valorNuevo)
 {
 	if (nullptr == valor)
 	{
-		throw new exception("null pointerr!!!");
+		throw cException();
 	}
 	else 
 		*valor = valorNuevo;
