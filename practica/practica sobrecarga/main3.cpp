@@ -46,7 +46,6 @@ int main()
 	cTelefonoNum tel4("Saul", 12, 12, 23);
 	cTelefonoNum tel5("Emi", 12, 12, 23);
 
-
 	//list<cTelefonoNum> listaTel;
 	//listaTel.push_back(tel1);
 	//listaTel.push_back(tel2);

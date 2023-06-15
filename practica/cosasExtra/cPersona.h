@@ -9,6 +9,7 @@ class cPersona
 	string datosmiCasa;
 
 public:
+	string to_string();
 	static int cant;
 	cPersona(int dni = cant++);
 	cPersona(string);

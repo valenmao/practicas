@@ -13,8 +13,6 @@ public:
 	T operator[](T&);
 };
 
-
-
 template <class T>
 inline void cList<T> ::operator+(T &element)
 {

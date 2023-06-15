@@ -13,6 +13,14 @@ cPersona::cPersona(string nom):dni(++cant)
 	this->datosmiCasa = "";
 }
 
+string cPersona::to_string()
+{
+	stringstream out;
+	out <<"Yo me llamo"<< nombre << ", mi dni es" << dni << ", somos" << cant << endl;
+
+	return out.str();
+}
+
 cPersona::cPersona(cPersona& copia):dni(copia.dni)
 {
 	nombre = copia.nombre;
